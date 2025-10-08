@@ -1,75 +1,169 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Resume</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teresa So | Resume</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f9fafc;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-  <body>
-    Welcome to my JAMstack website</h1>
-    <h3>Howdy! My name is Teresa So. I am a Business Honors and Management Information Systems major, Class of 2027. </h3>
-<img src="headshot.jpg" alt="Teresa So Headshot" width="500" height="600">
-    <h4>
- <section class="section">
-    <h2>Education</h2>
-    <p><strong>Texas A&M University</strong>, College Station, TX — <em>May 2027</em><br>
-      B.B.A. in Business Honors and Management Information Systems, Studio Art Minor<br>
-      <strong>GPR:</strong> 3.826
-    </p>
-  </section>
+    header {
+      background-color: #8b0000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
 
-  <section class="section">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Sewell, Houston, TX</strong> — Sales and Service Intern (May–Aug 2025)<br>
-      Delivered exceptional service using dealership systems; sold 12 Cadillacs through client engagement and product pitching.</li>
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
 
-      <li><strong>IntelliVest, College Station, TX</strong> — AI Financial Advising Project (May 2025–Present)<br>
-      Developed an AI platform using LLMs to analyze market data; designed UI mockups and branding assets.</li>
+    header h3 {
+      margin-top: 0.5rem;
+      font-weight: normal;
+      font-size: 1.1rem;
+    }
 
-      <li><strong>Residential Life, Texas A&M University</strong> — Residential Advisor (Mar 2024–Present)<br>
-      Enforced policies, mediated conflicts, and built community through events and programming.</li>
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-      <li><strong>The Reach Project</strong> — Marketing Consultant (Sep–Dec 2024)<br>
-      Created brandbook, redesigned website, and led SWOT and reinvestment analyses.</li>
+    img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+    }
 
-      <li><strong>Texas Arts and Hearts</strong> — Founder (May 2019–May 2025)<br>
-      Founded non-profit donating artwork proceeds to cancer research via the American Cancer Society.</li>
-    </ul>
-  </section>
+    h2 {
+      border-bottom: 2px solid #8b0000;
+      padding-bottom: 0.3rem;
+      color: #8b0000;
+      margin-top: 2rem;
+    }
 
-  <section class="section">
-    <h2>Leadership</h2>
-    <ul>
-      <li><strong>Freshman Leaders in New Technology</strong> — Project Manager & Head of Design (Oct 2023–Present)</li>
-      <li><strong>Texas A&M Club Swim</strong> — Social Media Director (Sep 2023–Present)</li>
-    </ul>
-  </section>
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
 
-  <section class="section">
-    <h2>Involvement</h2>
-    <ul>
-      <li><strong>Association of Information Technology Professionals</strong> — Member (Aug 2025–Present)</li>
-      <li><strong>M.B. Zale Leadership Scholars</strong> — Member (May 2024–Present)</li>
-      <li><strong>Mays Business Honors Program</strong> — Member (Aug 2023–Present)</li>
-    </ul>
-  </section>
+    li {
+      margin-bottom: 0.8rem;
+    }
 
-  <section class="section">
-    <h2>Honors</h2>
-    <ul>
-      <li>Eli Jones Dean’s Choice 5-Year Full Ride Scholarship (2023–2028)</li>
-      <li>Miss Chinatown Houston 2024</li>
-      <li>General Motors Scholarship (2023–2027)</li>
-      <li>Dean’s Honor Roll — Fall 2024</li>
-    </ul>
-  </section>
+    strong {
+      color: #222;
+    }
 
-  <section class="section">
-    <h2>Skills</h2>
-    <p>C#, SolidWorks, AWS, Copilot, Gemini, Excel, PowerPoint, Adobe Illustrator, Photoshop, InDesign, Chinese</p>
-  </section>
-      
-    </h4>
-    <p> This website is built with HTML and with GitHub </p>
-  </body>
+    em {
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Teresa So</h1>
+    <h3>Business Honors & MIS Major | Texas A&M University, Class of 2027</h3>
+  </header>
+
+  <div class="container">
+    <img src="headshot.jpg" alt="Teresa So Headshot" width="400" height="500">
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Texas A&M University</strong>, College Station, TX — <em>May 2027</em><br>
+        B.B.A. in Business Honors and Management Information Systems, Studio Art Minor<br>
+        <strong>GPR:</strong> 3.826
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Sewell, Houston, TX</strong> — Sales and Service Intern (May–Aug 2025)<br>
+        Delivered exceptional service using dealership systems; sold 12 Cadillacs through client engagement and product pitching.</li>
+
+        <li><strong>IntelliVest, College Station, TX</strong> — AI Financial Advising Project (May 2025–Present)<br>
+        Developed an AI platform using LLMs to analyze market data; designed UI mockups and branding assets.</li>
+
+        <li><strong>Residential Life, Texas A&M University</strong> — Residential Advisor (Mar 2024–Present)<br>
+        Enforced policies, mediated conflicts, and built community through events and programming.</li>
+
+        <li><strong>The Reach Project</strong> — Marketing Consultant (Sep–Dec 2024)<br>
+        Created brandbook, redesigned website, and led SWOT and reinvestment analyses.</li>
+
+        <li><strong>Texas Arts and Hearts</strong> — Founder (May 2019–May 2025)<br>
+        Founded non-profit donating artwork proceeds to cancer research via the American Cancer Society.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Leadership</h2>
+      <ul>
+        <li><strong>Freshman Leaders in New Technology</strong> — Project Manager & Head of Design (Oct 2023–Present)</li>
+        <li><strong>Texas A&M Club Swim</strong> — Social Media Director (Sep 2023–Present)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Involvement</h2>
+      <ul>
+        <li><strong>Association of Information Technology Professionals</strong> — Member (Aug 2025–Present)</li>
+        <li><strong>M.B. Zale Leadership Scholars</strong> — Member (May 2024–Present)</li>
+        <li><strong>Mays Business Honors Program</strong> — Member (Aug 2023–Present)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Honors</h2>
+      <ul>
+        <li>Eli Jones Dean’s Choice 5-Year Full Ride Scholarship (2023–2028)</li>
+        <li>Miss Chinatown Houston 2024</li>
+        <li>General Motors Scholarship (2023–2027)</li>
+        <li>Dean’s Honor Roll — Fall 2024</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p>C#, SolidWorks, AWS, Copilot, Gemini, Excel, PowerPoint, Adobe Illustrator, Photoshop, InDesign, Chinese</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>This website was built with HTML and hosted on GitHub Pages.</p>
+  </footer>
+</body>
 </html>
